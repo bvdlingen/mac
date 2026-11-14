@@ -1,0 +1,10 @@
+[package]
+name = "hello_gui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.29"
+egui = "0.29"
+# Minimal clap setup: no default features, only what we use (keeps the binary small).
+clap = { version = "4", default-features = false, features = ["derive", "std", "help", "usage", "error-context"] }
